@@ -1,0 +1,923 @@
+{
+	"sheets": [
+		{
+			"name": "scenes",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "value"
+				},
+				{
+					"typeStr": "13",
+					"name": "script"
+				},
+				{
+					"typeStr": "8",
+					"name": "bgs",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "objs",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "moves",
+					"opt": true,
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"bgs": [
+						{
+							"x": 0,
+							"y": 50,
+							"file": "../../assets/data/scene001/bg.png",
+							"id": "1"
+						}
+					],
+					"objs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene001/strap.png",
+							"image": "f4fc8867420f14f6832c9f912a4ae6ca",
+							"x": 48,
+							"y": 76,
+							"click": "strap",
+							"off": "GAIN_STRAP_CIRCLE"
+						},
+						{
+							"id": "2",
+							"file": "../../assets/data/scene001/next.png",
+							"image": "a4c975ad9dccca1a3b200687206d26f9",
+							"x": 158,
+							"y": 170,
+							"click": "next"
+						},
+						{
+							"id": "3",
+							"file": "../../assets/data/scene001/memo.png",
+							"image": "e8a2572d16f650511de3016f3dfbd955",
+							"x": 10,
+							"y": 123,
+							"click": "memo",
+							"off": "GAIN_MEMO"
+						},
+						{
+							"id": "4",
+							"file": "../../assets/data/scene001/floppy.png",
+							"image": "c6891b994fc157a42fefd6dd0c3cb7ba",
+							"x": 115,
+							"y": 313,
+							"click": "floppy",
+							"off": "GAIN_FLOPPY"
+						},
+						{
+							"id": "5",
+							"file": "../../assets/data/scene001/hand.png",
+							"image": "942adba438c8a8f3de6308c942061fec",
+							"x": 337,
+							"y": 220,
+							"click": "hand1",
+							"on": "HAND1_ON",
+							"off": "HAND1_OFF"
+						}
+					],
+					"script": "../../docs/scripts/001/001.adv",
+					"id": "Entrance",
+					"value": 1,
+					"name": "１号車両"
+				},
+				{
+					"id": "Train2",
+					"name": "２号車両",
+					"value": 2,
+					"script": "../../docs/scripts/002/002.adv",
+					"bgs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene002/bg.png",
+							"x": 0,
+							"y": 50
+						}
+					],
+					"objs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene002/strap.png",
+							"image": "31102c275459b9f6dd0d9bd926e7f8a1",
+							"x": 276,
+							"y": 70,
+							"click": "strap",
+							"off": "GAIN_STRAP_TRIANGLE"
+						},
+						{
+							"id": "2",
+							"file": "../../assets/data/scene002/input.png",
+							"image": "",
+							"x": 327,
+							"y": 77,
+							"click": "input"
+						},
+						{
+							"id": "3",
+							"file": "../../assets/data/scene002/door.png",
+							"image": "737e15e3288f562c49aaa218b4136270",
+							"x": 86,
+							"y": 138,
+							"click": "door"
+						}
+					],
+					"moves": [
+						{
+							"id": 3,
+							"click": "",
+							"jump": "Entrance"
+						}
+					]
+				},
+				{
+					"id": "Train3",
+					"name": "３号車両",
+					"value": 3,
+					"script": "../../docs/scripts/003/003.adv",
+					"bgs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene003/bg.png",
+							"x": 0,
+							"y": 50
+						}
+					],
+					"objs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene003/box.png",
+							"image": "6839858cc8bf6e2c34503a9260155b63",
+							"x": 61,
+							"y": 219,
+							"click": "box",
+							"off": "OPEN_BOX"
+						},
+						{
+							"id": "2",
+							"file": "../../assets/data/scene003/box2.png",
+							"image": "9be802a45819f5c009ff2719fd992c25",
+							"x": 51,
+							"y": 205,
+							"click": "box2",
+							"on": "OPEN_BOX"
+						},
+						{
+							"id": "3",
+							"file": "../../assets/data/scene003/hand.png",
+							"image": "0d9bd50cb79ca650728bfa3222daacdf",
+							"x": 359,
+							"y": 192,
+							"click": "hand",
+							"on": "HAND2_ON",
+							"off": "HAND2_OFF"
+						},
+						{
+							"id": "4",
+							"file": "../../assets/data/scene003/blood.png",
+							"image": "abe0f05107cba80b8250689880ff6111",
+							"x": 359,
+							"y": 192,
+							"click": "",
+							"on": "HAND2_OFF"
+						},
+						{
+							"id": "5",
+							"file": "../../assets/data/scene003/mask.png",
+							"image": "d154df266d8b4d8e7277fee74ddda91d",
+							"x": 6,
+							"y": 178,
+							"click": "mask",
+							"off": "GAIN_MASK",
+							"on": "MASK_DROP"
+						},
+						{
+							"id": "6",
+							"file": "../../assets/data/scene003/bg2.png",
+							"image": "5bb98d3831f700e0de07b9b1dce68425",
+							"x": 0,
+							"y": 50,
+							"click": "",
+							"off": "TRAIN3_NON_DARK"
+						},
+						{
+							"id": "7",
+							"file": "../../assets/data/scene003/dark_hit.png",
+							"image": "8046dbf30f6c0aceb8f291299efe6a85",
+							"x": 42,
+							"y": 104,
+							"click": "dark_hit",
+							"off": "TRAIN3_NON_DARK"
+						},
+						{
+							"id": "8",
+							"file": "../../assets/data/scene003/dark_hit.png",
+							"image": "8046dbf30f6c0aceb8f291299efe6a85",
+							"x": 42,
+							"y": 104,
+							"click": "next",
+							"on": "TRAIN3_NON_DARK"
+						}
+					],
+					"moves": [
+						{
+							"id": 3,
+							"click": "",
+							"jump": "Train2"
+						}
+					]
+				},
+				{
+					"id": "Input1234",
+					"name": "？？？",
+					"value": 4,
+					"script": "../../docs/scripts/004/004.adv",
+					"bgs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene004/bg.png",
+							"x": 0,
+							"y": 50
+						}
+					],
+					"objs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene004/input.png",
+							"image": "e8c0fcb40b0173c65e54d496fe5f7893",
+							"x": 41,
+							"y": 224,
+							"click": "input",
+							"off": "UNLOCK_PINK"
+						},
+						{
+							"id": "2",
+							"file": "../../assets/data/scene004/unlock.png",
+							"image": "8c83d8ff2268eb60ee64ae08e712ca21",
+							"x": 0,
+							"y": 50,
+							"click": "",
+							"on": "UNLOCK_PINK"
+						},
+						{
+							"id": "3",
+							"file": "../../assets/data/scene004/knife.png",
+							"image": "98129f43764c03178241fbec0ceb98d9",
+							"x": 152,
+							"y": 239,
+							"click": "knife",
+							"on": "UNLOCK_PINK",
+							"off": "GAIN_KNIFE"
+						}
+					],
+					"moves": [
+						{
+							"id": 3,
+							"click": "",
+							"jump": "Train2"
+						}
+					]
+				},
+				{
+					"id": "Train2Door",
+					"name": "３号車両に続く扉",
+					"value": 5,
+					"script": "../../docs/scripts/005/005.adv",
+					"bgs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene005/bg.png",
+							"x": 0,
+							"y": 50
+						}
+					],
+					"objs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene005/knob.png",
+							"image": "a45c96b3481bf5aef7bb4c152acb40d1",
+							"x": 27,
+							"y": 392,
+							"click": "lock",
+							"off": "UNLOCK_TRAIN2"
+						},
+						{
+							"id": "2",
+							"file": "../../assets/data/scene005/circle.png",
+							"image": "98305f1d051b6f51f73aef9f106ae82e",
+							"x": 95,
+							"y": 297,
+							"click": "circle",
+							"off": "FIT_CIRCLE"
+						},
+						{
+							"id": "3",
+							"file": "../../assets/data/scene005/circle2.png",
+							"image": "45476156bc4fb3ef29e49e365ddbd9ff",
+							"x": 95,
+							"y": 297,
+							"click": "circle2",
+							"off": "UNLOCK_TRAIN2",
+							"on": "FIT_CIRCLE"
+						},
+						{
+							"id": "4",
+							"file": "../../assets/data/scene005/triangle.png",
+							"image": "0060d9a819ae88f0edf159fdeeb4365f",
+							"x": 236,
+							"y": 297,
+							"click": "triangle",
+							"off": "FIT_TRIANGLE"
+						},
+						{
+							"id": "5",
+							"file": "../../assets/data/scene005/triangle2.png",
+							"image": "52616d8b7b06a83b13953d9ddc21dd8d",
+							"x": 236,
+							"y": 297,
+							"click": "triangle2",
+							"on": "FIT_TRIANGLE",
+							"off": "UNLOCK_TRAIN2"
+						},
+						{
+							"id": "6",
+							"file": "../../assets/data/scene005/input.png",
+							"image": "f3e3f7a84cded71d65da8036d6f954c2",
+							"x": 139,
+							"y": 369,
+							"click": "input",
+							"on": "FIT_BOTH"
+						}
+					],
+					"moves": [
+						{
+							"id": 3,
+							"click": "",
+							"jump": "Train2"
+						}
+					]
+				},
+				{
+					"id": "LastDoor",
+					"name": "最後の扉",
+					"value": 6,
+					"script": "../../docs/scripts/006/006.adv",
+					"bgs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene006/bg.png",
+							"x": 0,
+							"y": 50
+						}
+					],
+					"objs": [
+						{
+							"id": "1",
+							"file": "../../assets/data/scene006/sticker.png",
+							"image": "f0cf3188c75e8c4316b54dc8edd3af79",
+							"x": 88,
+							"y": 134,
+							"click": "sticker",
+							"off": "UNLOCK_LASTDOOR"
+						},
+						{
+							"id": "2",
+							"file": "../../assets/data/scene006/floppy.png",
+							"image": "e06ef469419bf314f3f22fca9f3051c6",
+							"x": 170,
+							"y": 289,
+							"click": "floppy",
+							"off": "INSERT_FLOPPY"
+						},
+						{
+							"id": "3",
+							"file": "../../assets/data/scene006/floppy2.png",
+							"image": "98b8a3339384e54fc4754e0dc77bb536",
+							"x": 170,
+							"y": 289,
+							"click": "floppy2",
+							"on": "INSERT_FLOPPY",
+							"off": "UNLOCK_LASTDOOR"
+						},
+						{
+							"id": "4",
+							"file": "../../assets/data/scene006/sticker2.png",
+							"image": "101cc7aefadc9d9dc4cd4095ed9abb99",
+							"x": 97,
+							"y": 234,
+							"click": "sticker2",
+							"on": "LASTDOOR_HINT1",
+							"off": "UNLOCK_LASTDOOR"
+						},
+						{
+							"id": "5",
+							"file": "../../assets/data/scene006/input.png",
+							"image": "83bac70271694e6898522529db6766ca",
+							"x": 110,
+							"y": 344,
+							"click": "input",
+							"off": "UNLOCK_LASTDOOR"
+						},
+						{
+							"id": "10",
+							"file": "../../assets/data/scene006/unlock.png",
+							"image": "8fcdb0961c66f339d9b952b67bf986da",
+							"x": 0,
+							"y": 50,
+							"click": "escape",
+							"on": "UNLOCK_LASTDOOR"
+						}
+					],
+					"moves": [
+						{
+							"id": 3,
+							"click": "",
+							"jump": "Train3"
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "scenes@bgs",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "13",
+					"name": "file",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "x"
+				},
+				{
+					"typeStr": "3",
+					"name": "y"
+				}
+			]
+		},
+		{
+			"name": "scenes@objs",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "13",
+					"name": "file",
+					"display": null
+				},
+				{
+					"typeStr": "7",
+					"name": "image",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "x"
+				},
+				{
+					"typeStr": "3",
+					"name": "y"
+				},
+				{
+					"typeStr": "1",
+					"name": "click",
+					"display": null
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "on",
+					"opt": true
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "off",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "scenes@moves",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "5:left,up,right,down",
+					"name": "id"
+				},
+				{
+					"typeStr": "6:scenes",
+					"name": "jump",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "click",
+					"display": null
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "on",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "off",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "items",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "value"
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "flag",
+					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "materials",
+					"opt": true
+				}
+			],
+			"lines": [
+				{
+					"name": "ダミー",
+					"value": 0,
+					"id": "ITEM_DUMMY"
+				},
+				{
+					"id": "ITEM_STRAP_CIRCLE",
+					"name": "丸い吊り革",
+					"value": 1,
+					"flag": "GAIN_STRAP_CIRCLE"
+				},
+				{
+					"id": "ITEM_STRAP_TRIANGLE",
+					"name": "三角の吊り革",
+					"value": 2,
+					"flag": "GAIN_STRAP_TRIANGLE"
+				},
+				{
+					"id": "ITEM_KNIFE",
+					"name": "カッターナイフ",
+					"value": 3,
+					"flag": "GAIN_KNIFE"
+				},
+				{
+					"id": "ITEM_MEMO",
+					"name": "メモ書き",
+					"value": 4,
+					"flag": "GAIN_MEMO"
+				},
+				{
+					"id": "ITEM_FLOPPY",
+					"name": "フロッピーディスク",
+					"value": 5,
+					"flag": "GAIN_FLOPPY"
+				},
+				{
+					"id": "ITEM_MASK",
+					"name": "能面",
+					"value": 6,
+					"flag": "GAIN_MASK"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "flags",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "3",
+					"name": "value"
+				},
+				{
+					"typeStr": "1",
+					"name": "comment",
+					"opt": true,
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "TEST_FLAG",
+					"value": 10,
+					"comment": "テスト用"
+				},
+				{
+					"id": "GAIN_STRAP_CIRCLE",
+					"value": 11,
+					"comment": "丸い吊り革を取得"
+				},
+				{
+					"id": "GAIN_STRAP_TRIANGLE",
+					"value": 12,
+					"comment": "三角の吊り革を取得"
+				},
+				{
+					"id": "GAIN_KNIFE",
+					"value": 13,
+					"comment": "カッターナイフを取得"
+				},
+				{
+					"id": "GAIN_MEMO",
+					"value": 14,
+					"comment": "「こけし、買い取ります」のメモ書き取得"
+				},
+				{
+					"id": "GAIN_FLOPPY",
+					"value": 15,
+					"comment": "フロッピーディスク取得"
+				},
+				{
+					"id": "GAIN_MASK",
+					"value": 16,
+					"comment": "能面を取得"
+				},
+				{
+					"id": "OPEN_BOX",
+					"value": 30,
+					"comment": "箱を開いているかどうか"
+				},
+				{
+					"id": "UNLOCK_PINK",
+					"value": 40,
+					"comment": "ピンクの金庫を解錠した"
+				},
+				{
+					"id": "UNLOCK_TRAIN2",
+					"value": 50,
+					"comment": "2号車両に続く扉を解錠した"
+				},
+				{
+					"id": "FIT_CIRCLE",
+					"value": 51,
+					"comment": "円形の穴に吊り革を差し込んだ"
+				},
+				{
+					"id": "FIT_TRIANGLE",
+					"value": 52,
+					"comment": "三角形の穴に吊り革を差し込んだ"
+				},
+				{
+					"id": "FIT_BOTH",
+					"value": 53,
+					"comment": "両方の穴に吊り革を差し込んだ"
+				},
+				{
+					"id": "HAND1_ON",
+					"value": 20
+				},
+				{
+					"id": "HAND1_OFF",
+					"value": 21
+				},
+				{
+					"id": "HAND2_ON",
+					"value": 22
+				},
+				{
+					"id": "HAND2_OFF",
+					"value": 23
+				},
+				{
+					"id": "MASK_DROP",
+					"value": 24,
+					"comment": "能面出現"
+				},
+				{
+					"id": "TRAIN3_NON_DARK",
+					"value": 25,
+					"comment": "３号車両の暗闇解除"
+				},
+				{
+					"id": "INSERT_FLOPPY",
+					"value": 60,
+					"comment": "フロッピーディスクを差し込んだ"
+				},
+				{
+					"id": "LASTDOOR_HINT1",
+					"value": 61,
+					"comment": "最後のドアのヒント１"
+				},
+				{
+					"id": "UNLOCK_LASTDOOR",
+					"value": 62,
+					"comment": "最後のドアを解錠した"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "items@materials",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:items",
+					"name": "material",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "kanas",
+			"columns": [
+				{
+					"typeStr": "3",
+					"name": "id"
+				},
+				{
+					"typeStr": "1",
+					"name": "answer",
+					"display": null
+				},
+				{
+					"typeStr": "2",
+					"name": "auto_check"
+				},
+				{
+					"typeStr": "3",
+					"name": "idx"
+				},
+				{
+					"typeStr": "8",
+					"name": "choices",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": 1,
+					"answer": "しゆうまつ",
+					"choices": [
+						{
+							"moji": "さしすせそ"
+						},
+						{
+							"moji": "やゆよ"
+						},
+						{
+							"moji": "あいうえお"
+						},
+						{
+							"moji": "まみむめも"
+						},
+						{
+							"moji": "たちつてと"
+						}
+					],
+					"auto_check": false,
+					"idx": 60
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "panels",
+			"columns": [
+				{
+					"typeStr": "3",
+					"name": "id"
+				},
+				{
+					"typeStr": "1",
+					"name": "answer"
+				},
+				{
+					"typeStr": "8",
+					"name": "choices"
+				}
+			],
+			"lines": [
+				{
+					"id": 1,
+					"answer": "カタナ",
+					"choices": [
+						{
+							"letter": "ナ"
+						},
+						{
+							"letter": "タ"
+						},
+						{
+							"letter": "カ"
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "panels@choices",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "letter",
+					"display": null
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "on",
+					"opt": true
+				},
+				{
+					"typeStr": "6:flags",
+					"name": "off",
+					"opt": true,
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "kanas@choices",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "moji"
+				}
+			]
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}
